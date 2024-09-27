@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int sum(int a, int b);
+char board[9] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+
+void displayBoard();
 
 int main(){
-    int a = 8, b = 2;
-    cout<<sum(a, b);
+    displayBoard();
 }
