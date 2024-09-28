@@ -14,7 +14,7 @@ bool placeMarker(int, char);
 int main(){
     std::cout<< "\n **Welcome to Tic-Tac-Toe** \n\n";
     std::cout << "Player 1: X,   Player 2: O\n";
-    char currentMarker = 'X';
+    currentMarker = 'X';
 
     while(true) {
         displayBoard();
