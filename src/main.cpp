@@ -8,7 +8,7 @@ char board[9] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 void displayBoard();
 bool checkWin();
 bool checkDraw();
-void switchPlayer(int, char);
+void switchPlayer(int&, char&);
 bool placeMarker(int, char);
 
 int main(){
@@ -20,7 +20,7 @@ int main(){
         displayBoard();
         int slot;
 
-        std::cout<<"Player "<<currentPlayer<<"enter your move(1-9): ";
+        std::cout<<"Player "<<currentPlayer<<" enter your move(1-9): ";
         std::cin>>slot;
         if(!placeMarker(slot, currentMarker)){
             std::cout<<"Invalid Move!! Try again\n";
@@ -33,7 +33,7 @@ int main(){
             break;
         }
 
-        if(checkDraw){
+        if(checkDraw()){
             std::cout<<"Draww\n";
             break;;
         }
