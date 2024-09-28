@@ -35,7 +35,7 @@ int main(){
 
         if(checkDraw()){
             std::cout<<"Draww\n";
-            break;;
+            break;
         }
         switchPlayer(currentPlayer, currentMarker);
     }
